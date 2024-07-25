@@ -55,7 +55,6 @@ export const skills = [
 ];
 
 
-
 export interface Project {
   title: string;
   description: string;
