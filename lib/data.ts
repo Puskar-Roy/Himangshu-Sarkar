@@ -6,8 +6,6 @@ import {
   SiCss3,
   SiAmazonaws,
   SiGit,
-  SiMetasploit,
-  SiBurpsuite,
 } from "react-icons/si";
 import { FaMedium } from "react-icons/fa6";
 // import { SiMetasploit } from "react-icons/si";
