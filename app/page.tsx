@@ -20,7 +20,6 @@ export default function Home() {
   const resumeLink =
     "https://drive.google.com/file/d/1CkqMNBfaEg_rb2_cbhvugZ_IqMyuTLsx/view?usp=sharing";
   return (
-    
     <div className="flex flex-col md:flex-row my-10 mx-10 md:mx-0 space-x-0 md:space-x-10 space-y-10 md:space-y-0 ">
       <Sidebar />
       <div className="md:min-w-[65vh] min-w-full space-y-10">
@@ -35,10 +34,7 @@ export default function Home() {
             <Separator />
           </div>
           <div className="flex justify-between">
-            <ActionButton
-              actionText="Resume"
-              
-            />
+            <ActionButton actionText="Resume" />
             <div className="space-y-1">
               <h3 className="font-medium leading-none">
                 {aboutYou.yearsOfExperience}
@@ -55,9 +51,10 @@ export default function Home() {
               {skills.map((skill) => (
                 <SkillOutline
                   key={skill?.text}
-                 // @ts-ignore
-                  Icon={skill?.icon || <FaMedium/>}
-                  text={skill?.text || ""}
+                  // @ts-ignore
+                  Icon={skill?.icon}
+                  // @ts-ignore
+                  text={skill?.text}
                 />
               ))}
             </div>
