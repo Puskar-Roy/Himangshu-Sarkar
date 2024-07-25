@@ -4,6 +4,7 @@ import Sidebar from "@/components/sidebar";
 import SkillOutline from "@/components/skill-outline";
 import { Separator } from "@/components/ui/separator";
 import WorkShowcase from "@/components/work-showcase";
+import { FaMedium } from "react-icons/fa6";
 
 import {
   Project,
@@ -53,9 +54,10 @@ export default function Home() {
             <div className="space-y-2">
               {skills.map((skill) => (
                 <SkillOutline
-                  key={skill.text}
-                  Icon={skill.icon}
-                  text={skill.text}
+                  key={skill?.text}
+                 // @ts-ignore
+                  Icon={skill?.icon || <FaMedium/>}
+                  text={skill?.text || ""}
                 />
               ))}
             </div>

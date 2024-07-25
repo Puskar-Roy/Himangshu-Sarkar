@@ -5,7 +5,8 @@ import Logo from "./logo";
 import { ModeToggle } from "./mode-toggle";
 import { Home, Briefcase, Mail, Presentation } from "lucide-react";
 import { useRouter } from "next/navigation";
-import { FaBlog } from "react-icons/fa6";
+import { FaMedium } from "react-icons/fa6";
+
 
 export default function Navbar() {
   const router = useRouter();
@@ -61,7 +62,7 @@ export default function Navbar() {
           size="sm"
           className="ml-auto h-8"
         >
-          <FaBlog className=" h-4 w-4" />
+          <FaMedium className=" h-4 w-4" />
           <span className="hidden md:block ml-2">Blogs</span>
         </Button>
         <ModeToggle />

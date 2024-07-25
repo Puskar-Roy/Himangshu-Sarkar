@@ -9,6 +9,7 @@ import {
   SiMetasploit,
   SiBurpsuite,
 } from "react-icons/si";
+import { FaMedium } from "react-icons/fa6";
 // import { SiMetasploit } from "react-icons/si";
 import { MdOutlineSecurity } from "react-icons/md";
 import { VscTerminalBash } from "react-icons/vsc";
@@ -50,6 +51,11 @@ export const skills = [
   {
     icon: SiJavascript,
     text: "JavaScript",
+  },
+  ,
+  {
+    icon: FaMedium,
+    text: "Medium",
   },
   
 ];
