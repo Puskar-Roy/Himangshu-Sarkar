@@ -50,11 +50,7 @@ export const skills = [
     icon: SiJavascript,
     text: "JavaScript",
   },
-  ,
-  {
-    icon: FaMedium,
-    text: "Medium",
-  },
+  
   
 ];
 
